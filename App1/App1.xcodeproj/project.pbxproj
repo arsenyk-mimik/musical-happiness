@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A9C8CE31C4974B60025098B /* Framework1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9C8CE21C4974B60025098B /* Framework1.framework */; };
-		0A9C8CE41C4975090025098B /* Framework1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9C8CE21C4974B60025098B /* Framework1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AD6197F1C2B62B0008B9573 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6197E1C2B62B0008B9573 /* main.m */; };
 		0AD619821C2B62B0008B9573 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD619811C2B62B0008B9573 /* AppDelegate.m */; };
 		0AD619851C2B62B0008B9573 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD619841C2B62B0008B9573 /* ViewController.m */; };
@@ -17,6 +15,7 @@
 		0AD6198D1C2B62B0008B9573 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD6198B1C2B62B0008B9573 /* LaunchScreen.storyboard */; };
 		0AD619981C2B62B0008B9573 /* App1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD619971C2B62B0008B9573 /* App1Tests.m */; };
 		0AD619A31C2B62B0008B9573 /* App1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD619A21C2B62B0008B9573 /* App1UITests.m */; };
+		12D0CF251C49DCBD000471D0 /* Framework1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D0CF241C49DCBD000471D0 /* Framework1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +42,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0A9C8CE41C4975090025098B /* Framework1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,7 +58,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A9C8CE21C4974B60025098B /* Framework1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Framework1.framework; path = "../../../Library/Developer/Xcode/DerivedData/DependenciesTest-fghwdmsrymfktaaybjivzgzdyscw/Build/Products/Debug-iphoneos/Framework1.framework"; sourceTree = "<group>"; };
 		0AD6197A1C2B62B0008B9573 /* App1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD6197E1C2B62B0008B9573 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0AD619801C2B62B0008B9573 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +74,7 @@
 		0AD6199E1C2B62B0008B9573 /* App1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = App1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD619A21C2B62B0008B9573 /* App1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = App1UITests.m; sourceTree = "<group>"; };
 		0AD619A41C2B62B0008B9573 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12D0CF241C49DCBD000471D0 /* Framework1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Framework1.framework; path = "../Framework1/build/Debug-iphoneos/Framework1.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A9C8CE31C4974B60025098B /* Framework1.framework in Frameworks */,
+				12D0CF251C49DCBD000471D0 /* Framework1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +106,7 @@
 		0AD619711C2B62B0008B9573 = {
 			isa = PBXGroup;
 			children = (
-				0A9C8CE21C4974B60025098B /* Framework1.framework */,
+				12D0CF241C49DCBD000471D0 /* Framework1.framework */,
 				0AD6197C1C2B62B0008B9573 /* App1 */,
 				0AD619961C2B62B0008B9573 /* App1Tests */,
 				0AD619A11C2B62B0008B9573 /* App1UITests */,
