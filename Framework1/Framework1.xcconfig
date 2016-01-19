@@ -1,0 +1,16 @@
+//
+//  Framework1.xcconfig
+//  Framework1
+//
+//  Created by arsenyk on 2016-01-18.
+//  Copyright © 2016 arsenyk. All rights reserved.
+//
+
+// Intermediate build files go here
+PROJECT_TEMP_DIR = $(SRCROOT)/../build/$(PROJECT_NAME).build
+
+// Build-related files for the active build configuration go here
+CONFIGURATION_BUILD_DIR = $(SRCROOT)/../build/$CONFIGURATION
+
+// The final product executables and other build products go here
+BUILT_PRODUCTS_DIR = $(SRCROOT)/../build/$CONFIGURATION

@@ -26,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A64888C1C4DAD4B005E2F9B /* Framework1.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework1.xcconfig; sourceTree = "<group>"; };
 		0A79D8841C2CB1A0006731FE /* Framework1Class1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Framework1Class1.h; sourceTree = "<group>"; };
 		0A79D8851C2CB1A0006731FE /* Framework1Class1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Framework1Class1.m; sourceTree = "<group>"; };
 		0A9C8CE91C49869E0025098B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -60,6 +61,7 @@
 		0AD6194D1C2B6285008B9573 = {
 			isa = PBXGroup;
 			children = (
+				0A64888C1C4DAD4B005E2F9B /* Framework1.xcconfig */,
 				0A9C8CE91C49869E0025098B /* libsqlite3.tbd */,
 				0AD619591C2B6285008B9573 /* Framework1 */,
 				0AD619651C2B6285008B9573 /* Framework1Tests */,
@@ -319,6 +321,7 @@
 		};
 		0AD6196C1C2B6285008B9573 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A64888C1C4DAD4B005E2F9B /* Framework1.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -327,6 +330,7 @@
 				INFOPLIST_FILE = Framework1/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mimiktech.DependencyTestProject.Framework1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
@@ -336,6 +340,7 @@
 		};
 		0AD6196D1C2B6285008B9573 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A64888C1C4DAD4B005E2F9B /* Framework1.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
