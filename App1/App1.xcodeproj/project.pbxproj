@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A64889F1C4DB522005E2F9B /* Framework1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A64889E1C4DB522005E2F9B /* Framework1.framework */; };
-		0A6488A01C4DB522005E2F9B /* Framework1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A64889E1C4DB522005E2F9B /* Framework1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A9C8CE31C4974B60025098B /* Framework1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9C8CE21C4974B60025098B /* Framework1.framework */; };
+		0A9C8CE41C4975090025098B /* Framework1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9C8CE21C4974B60025098B /* Framework1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AD6197F1C2B62B0008B9573 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6197E1C2B62B0008B9573 /* main.m */; };
 		0AD619821C2B62B0008B9573 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD619811C2B62B0008B9573 /* AppDelegate.m */; };
 		0AD619851C2B62B0008B9573 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD619841C2B62B0008B9573 /* ViewController.m */; };
@@ -43,15 +43,24 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0A6488A01C4DB522005E2F9B /* Framework1.framework in Embed Frameworks */,
+				0A9C8CE41C4975090025098B /* Framework1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9C8CDC1C496E850025098B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A64889E1C4DB522005E2F9B /* Framework1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Framework1.framework; path = ../build/Debug/Framework1.framework; sourceTree = "<group>"; };
+		0A9C8CE21C4974B60025098B /* Framework1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Framework1.framework; path = "../../../Library/Developer/Xcode/DerivedData/DependenciesTest-fghwdmsrymfktaaybjivzgzdyscw/Build/Products/Debug-iphoneos/Framework1.framework"; sourceTree = "<group>"; };
 		0AD6197A1C2B62B0008B9573 /* App1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD6197E1C2B62B0008B9573 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0AD619801C2B62B0008B9573 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A64889F1C4DB522005E2F9B /* Framework1.framework in Frameworks */,
+				0A9C8CE31C4974B60025098B /* Framework1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +108,7 @@
 		0AD619711C2B62B0008B9573 = {
 			isa = PBXGroup;
 			children = (
-				0A64889E1C4DB522005E2F9B /* Framework1.framework */,
+				0A9C8CE21C4974B60025098B /* Framework1.framework */,
 				0AD6197C1C2B62B0008B9573 /* App1 */,
 				0AD619961C2B62B0008B9573 /* App1Tests */,
 				0AD619A11C2B62B0008B9573 /* App1UITests */,
@@ -171,6 +180,7 @@
 				0AD619781C2B62B0008B9573 /* Resources */,
 				0A9C8CD91C4968230025098B /* Embed Frameworks */,
 				0A1493881C49D14D00BCA1AB /* ShellScript */,
+				0A9C8CDC1C496E850025098B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -454,12 +464,9 @@
 		0AD619A81C2B62B0008B9573 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../build/$(CONFIGURATION)";
 				INFOPLIST_FILE = App1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mimiktech.DependencyTestProject.App1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -470,12 +477,9 @@
 		0AD619A91C2B62B0008B9573 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../build/$(CONFIGURATION)";
 				INFOPLIST_FILE = App1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mimiktech.DependencyTestProject.App1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
