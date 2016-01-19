@@ -99,7 +99,7 @@
 		0AD619711C2B62B0008B9573 = {
 			isa = PBXGroup;
 			children = (
-				0A64889E1C4DB522005E2F9B /* Framework1.framework */,
+				0A64889F1C4DB522005E2F9B /* Framework1.framework */,
 				0AD6197C1C2B62B0008B9573 /* App1 */,
 				0AD619961C2B62B0008B9573 /* App1Tests */,
 				0AD619A11C2B62B0008B9573 /* App1UITests */,
